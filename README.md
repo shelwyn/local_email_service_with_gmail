@@ -22,6 +22,22 @@ GMAIL_APP_PASSWORD="your_app_password_here"
 EMAIL_API_KEY="some-long-random-secret"
 ```
 
+### How to get a Gmail App Password (`GMAIL_APP_PASSWORD`)
+
+1. **Turn on 2-Step Verification** for your Google account  
+   - Go to your Google Account security page (`https://myaccount.google.com/security`).  
+   - Under **"Signing in to Google"**, enable **2-Step Verification** if it is not already on.
+2. **Create an App Password**  
+   - On the same security page, under **"Signing in to Google"**, click **"App passwords"**.  
+   - You may need to re-enter your password.  
+   - For **Select app**, choose **Mail** (or "Other" and type something like `local-email-service`).  
+   - For **Select device**, choose your device or "Other".  
+   - Click **Generate**.
+3. **Copy the generated 16-character password** (no spaces)  
+   - This is your `GMAIL_APP_PASSWORD`.  
+   - Paste it into your `.env` file as the value for `GMAIL_APP_PASSWORD`.  
+   - Keep it secret and **do not commit `.env` to Git**.
+
 ---
 
 ## Running the Service
