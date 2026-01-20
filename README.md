@@ -22,6 +22,12 @@ GMAIL_APP_PASSWORD="your_app_password_here"
 EMAIL_API_KEY="some-long-random-secret"
 ```
 
+You can use the provided `env.txt` as a starting point:
+
+1. **Copy or rename** `env.txt` to `.env` in the project root.  
+2. Fill in the values for `GMAIL_USER`, `GMAIL_APP_PASSWORD`, and `EMAIL_API_KEY`.  
+3. Keep `.env` **out of version control** (it is already ignored via `.gitignore`).
+
 ### How to get a Gmail App Password (`GMAIL_APP_PASSWORD`)
 
 1. **Turn on 2-Step Verification** for your Google account  
